@@ -1,0 +1,38 @@
+{
+    "name": "EAS574 ML Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "github.copilot",
+                "github.copilot-chat"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.formatting.provider": "black",
+                "python.linting.enabled": true,
+                "python.linting.flake8Enabled": true,
+                "jupyter.askForKernelRestart": false,
+                "github.copilot.enable": {
+                    "*": true,
+                    "python": true,
+                    "markdown": true,
+                    "jupyter": true
+                }
+            }
+        }
+    },
+    "postCreateCommand": "pip install --user -r requirements.txt",
+    "remoteUser": "vscode"
+}

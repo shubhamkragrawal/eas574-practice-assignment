@@ -1,0 +1,14 @@
+# Core - keep it minimal for fast installs
+numpy
+pandas
+matplotlib
+seaborn
+
+# Notebook execution (for autograder)
+nbconvert
+ipykernel
+
+# Add as needed per chapter:
+# scikit-learn
+# ISLP
+# statsmodels

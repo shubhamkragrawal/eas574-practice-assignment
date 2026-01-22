@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Notebook Execution",
+      "setup": "pip install -r requirements.txt",
+      "run": "python -m nbconvert --to notebook --execute assignment.ipynb --output test_output.ipynb",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 600,
+      "points": 100
+    }
+  ]
+}
